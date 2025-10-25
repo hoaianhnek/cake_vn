@@ -207,18 +207,19 @@ body {
 
 .header-locale {
     border: 1px solid #ffffff;
-    border-radius: 1.875rem;
-    padding: 0.4rem 0.9rem;
+    border-radius: 30px;
+    padding: 5px 15px;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .language-select {
     background: transparent;
     border: 0;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0.08em;
     outline: none;
     appearance: none;
@@ -228,6 +229,29 @@ body {
 .language-select option {
     color: #212529;
 }
+
+/* @media (max-width: 991.98px) {
+    .header-locale {
+        border-radius: 0.75rem;
+        padding: 0.35rem 0.7rem;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .header-locale svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .language-select {
+        font-size: 0.75rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-actions #header-search-toggle {
+        order: -1;
+    }
+} */
 
 .header-menu-toggle {
     width: 42px;

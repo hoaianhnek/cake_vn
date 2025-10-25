@@ -7,12 +7,11 @@
                         <img src="{{ asset('images/logo-dark.png') }}" alt="Banh Viet" class="footer-logo">
                     </div>
 
-                    <div class="fw-semibold lh-lg">
+                    <div class="fw-semibold lh-lg font-matahari-700">
                         <p class="text-uppercase mb-2">CÔNG TY TNHH SẢN XUẤT THƯƠNG MẠI<br>DỊCH VỤ BÁNH VIỆT</p>
                         <p class="mb-1 small">178 Đặng Thúc Liêng, P. Chánh Hưng, Tp. HCM</p>
                         <p class="mb-0 small">
-                            Hotline: <a href="tel:0522252688" class="footer-link">0522.252.688</a> |
-                            Email: <a href="mailto:info@banhviet.vn" class="footer-link">info@banhviet.vn</a>
+                            Hotline: 0522.252.688 | Email: info@banhviet.vn
                         </p>
                     </div>
 
