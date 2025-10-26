@@ -10,7 +10,7 @@
 
     <!-- Nuôi dưỡng điều lành -->
     <div class="bg-light-gray">
-        <div class="container">
+        <div class="container-custom">
             <!-- Text section -->
             <div class="content">
                 <h2 class="title">Nuôi dưỡng điều lành</h2>
@@ -27,7 +27,7 @@
 
     <!-- Lưu giữ hồn Việt -->
     <div class="bg-white">
-        <div class="container">
+        <div class="container-custom">
             <!-- Text section -->
             <div class="content">
                 <h2 class="title">Lưu giữ hồn Việt</h2>
@@ -54,8 +54,8 @@
             ['name' => 'Bí Đao Chanh Sả', 'image' => asset('images/home/chanh-sa.png')],
         ];
     @endphp
-    <div class="choice-section bg-white py-5 py-lg-5">
-        <div class="container">
+    <div class="choice-section bg-white py-5">
+        <div class="container-custom">
             <div class="choice-header text-center mb-4 mb-lg-5">
                 <h2 class="choice-title">Lựa chọn của bạn</h2>
                 <p class="choice-subtitle">Và không chỉ có nước, Bánh Việt còn rất nhiều các sản phẩm bánh khác, bánh Flan, bánh Quẩy...</p>
@@ -94,6 +94,8 @@
                 <button type="button" class="btn-custom js-scroll-top">Lên trang đầu</button>
             </div>
         </div>
+
+        <div class="line"></div>
     </div>
 </section>
 
