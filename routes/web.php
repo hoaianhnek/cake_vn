@@ -8,6 +8,7 @@ use App\Http\Controllers\User\{
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/product', [HomeController::class, 'product']);
+Route::get('/product-detail', [HomeController::class, 'productDetail']);
 
 Route::get('/lang/{locale}', function ($locale) {
     if (!in_array($locale, ['en', 'vi'])) {
