@@ -1,4 +1,4 @@
-<header class="bg-brand-teal text-white">
+<header class="bg-brand-teal text-white fixed-top">
     <div class="container py-3 d-flex align-items-center justify-content-between flex-wrap gap-3">
         <!-- Logo -->
         <a href="{{ url('/') }}" class="d-inline-flex align-items-center text-white text-decoration-none gap-3">
