@@ -1,0 +1,490 @@
+.bg_slide,
+.bg_slide_cloud {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.bg_slide {
+    background: url('../images/products/nature-landscape-with-vegetation-flora.png');
+    background-position: bottom left;
+    background-size: cover;
+}
+.slide_item {
+    position: relative;
+}
+.categories ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0px;
+    gap: 24px;
+}
+.categories ul li a {
+    font-family: 'Matahari-400';
+}
+.category_item a {
+    color: #005651 !important;
+    font-size: 9px;
+    padding: 5px;
+    width: 59px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+}
+.category_item a> div {
+    margin-top: 2px;
+}
+.category_item a:hover {
+    border: 1px solid #005651;
+    border-radius: 5px;
+}
+.category_item {
+    display: contents;
+}
+.category_img {
+    height: 26px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: end;
+}
+
+section.slides {
+    position: relative;
+    top: 74px;
+    height: 450px;
+}
+section.slides .slide_item {
+    position: relative;
+    height: 100%;
+}
+.slide_left {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 40%;
+    color: #F5F5F7;
+}
+.slide_left h2 {
+    font-size: 64px;
+    font-family: 'SVN-Gratelos';
+    margin-bottom: 0px;
+}
+.slide_left p {
+    font-family: 'Matahari-400';
+    font-size: 12px;
+}
+.slide_left p.sub_title {
+    font-style: italic;
+}
+.slide_left p.content {
+    font-size: 9px;
+    width: 182px;
+}
+.btn_buynow {
+    font-family: 'Matahari-400';
+    font-size: 8px;
+    color: #FFFFFF;
+    font-style: italic;
+    padding: 6px 16px;
+    background: #f8f5e530;
+    border: none;
+    border-radius: 5px;
+}
+.slide_right {
+    position: relative;
+    width: 55%;
+    float: right;
+}
+.slide_right .img1 {
+    width: 48px;
+    height: 43px;
+    position: absolute;
+    top: 287px;
+}
+.slide_right img {
+    max-width: none;
+}
+.group_img {
+    width: 80%;
+    float: right;
+    position: relative;
+}
+.img5 {
+    position: absolute;
+    width: 259px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img3 {
+    width: 100px;
+    position: absolute;
+    top: 350px;
+    left: 145px;
+}
+.group_img4 {
+    position: absolute;
+}
+.img41 {
+    width: 64px;
+    position: absolute;
+    top: 98px;
+    left: 163px;
+    z-index: 1;
+}
+.img42 {
+    width: 84px;
+    left: 187px;
+    top: 109px;
+    position: absolute;
+}
+.img2 {
+    position: absolute;
+    width: 70px;
+    left: 308px;
+    top: 300px;
+    z-index: 1;
+}
+.img6 {
+    position: absolute;
+    width: 105px;
+    left: 362px;
+    top: 27px;
+}
+.bg-light {
+    background: #D9D9D9;
+}
+/* hero */
+section.hero {
+    margin-top: 80px;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    background: url('../images/products/nature-landscape-with-vegetation-flora.png');
+    background-position: bottom left;
+    background-size: cover;
+}
+/* section.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("{{ asset('images/home/bg.png') }}") center/cover no-repeat;
+    opacity: 0.45;
+    mix-blend-mode: screen;
+    pointer-events: none;
+} */
+section.hero .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+.hero_content {
+    max-width: 420px;
+    color: #fff7eb;
+}
+.hero_title {
+    font-family: 'SVN-Gratelos';
+    font-size: 60px;
+    line-height: 0.95;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+.hero_subtitle {
+    font-family: 'Matahari-400';
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.hero_desc {
+    font-family: 'Matahari-400';
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    color: rgba(255, 255, 255, 0.85);
+}
+.hero_cta {
+    font-family: 'Matahari-400';
+    font-size: 12px;
+    color: #FFFFFF;
+    font-style: italic;
+    padding: 6px 16px;
+    background: #f8f5e530;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+.hero_cta:hover {
+    font-weight: 700;
+}
+.hero_visual {
+    flex: 1;
+    position: relative;
+    min-height: 360px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    perspective: 1200px;
+    --hero-base-x: min(60vw, 520px);
+    --hero-base-y: min(45vw, 360px);
+}
+.hero_bottle {
+    max-height: 450px;
+    width: auto;
+    position: relative;
+    z-index: 2;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    filter: drop-shadow(0 42px 40px rgba(153, 79, 0, 0.35));
+}
+.hero_decor {
+    position: absolute;
+    max-width: none;
+    z-index: 1;
+    pointer-events: none;
+    --decor-x: 0px;
+    --decor-y: 0px;
+    --decor-hover-x: 0px;
+    --decor-hover-y: 0px;
+    --decor-rotate: 0deg;
+    --decor-hover-rotate: 0deg;
+    --decor-scale: 1;
+    top: calc(50% + var(--decor-y));
+    left: calc(50% + var(--decor-x));
+    transform: translate(-50%, -50%) translate(var(--decor-hover-x), var(--decor-hover-y)) rotate(calc(var(--decor-rotate) + var(--decor-hover-rotate))) scale(var(--decor-scale));
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.6s ease;
+    will-change: transform;
+}
+.hero_decor--1 {
+    width: calc(var(--hero-base-x) * 0.21);
+    --decor-x: calc(var(--hero-base-x) * 0.25);
+    --decor-y: calc(var(--hero-base-y) * -0.4);
+}
+.hero_decor--2 {
+    width: calc(var(--hero-base-x) * 0.16);
+    --decor-x: calc(var(--hero-base-x) * -0.12);
+    --decor-y: calc(var(--hero-base-y) * -0.23);
+}
+.hero_decor--3 {
+    width: calc(var(--hero-base-x) * 0.13);
+    --decor-x: calc(var(--hero-base-x) * -0.18);
+    --decor-y: calc(var(--hero-base-y) * -0.30);
+}
+.hero_decor--4 {
+    width: calc(var(--hero-base-x) * 0.1);
+    --decor-x: calc(var(--hero-base-x) * -0.45);
+    --decor-y: calc(var(--hero-base-y) * 0.18);
+}
+.hero_decor--5 {
+    width: calc(var(--hero-base-x) * 0.24);
+    --decor-x: calc(var(--hero-base-x) * -0.18);
+    --decor-y: calc(var(--hero-base-y) * 0.4);
+}
+.hero_decor--6 {
+    width: calc(var(--hero-base-x) * 0.14);
+    --decor-x: calc(var(--hero-base-x) * 0.11);
+    --decor-y: calc(var(--hero-base-y) * 0.28);
+    z-index: 10;
+}
+.hero_visual:hover .hero_bottle {
+    transform: rotate(-30deg);
+}
+.hero_visual:hover .hero_decor--1 {
+    --decor-hover-x: calc(var(--hero-base-x) * 0.15);
+    --decor-hover-y: calc(var(--hero-base-y) * -0.22);
+    --decor-hover-rotate: -45deg;
+}
+.hero_visual:hover .hero_decor--2 {
+    --decor-hover-x: calc(var(--hero-base-x) * -0.18);
+    --decor-hover-y: calc(var(--hero-base-y) * 0.06);
+    --decor-hover-rotate: -40deg;
+}
+.hero_visual:hover .hero_decor--3 {
+    --decor-hover-x: calc(var(--hero-base-x) * -0.19);
+    --decor-hover-y: calc(var(--hero-base-y) * -0.21);
+    --decor-hover-rotate: 30deg;
+}
+.hero_visual:hover .hero_decor--4 {
+    --decor-hover-x: calc(var(--hero-base-x) * -0.10);
+    --decor-hover-y: calc(var(--hero-base-y) * -0.14);
+    --decor-hover-rotate: -45deg;
+}
+.hero_visual:hover .hero_decor--5 {
+    --decor-hover-x: calc(var(--hero-base-x) * -0.10);
+    --decor-hover-y: calc(var(--hero-base-y) * 0.11);
+    --decor-hover-rotate: -70deg;
+}
+.hero_visual:hover .hero_decor--6 {
+    --decor-hover-x: calc(var(--hero-base-x) * 0.19);
+    --decor-hover-y: calc(var(--hero-base-y) * 0.14);
+    --decor-hover-rotate: 70deg;
+}
+@media (max-width: 992px) {
+    section.hero {
+        padding: 60px 30px;
+        margin-top: 60px;
+    }
+    section.hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero_content {
+        max-width: 100%;
+    }
+    .hero_title {
+        font-size: 52px;
+    }
+    .hero_subtitle {
+        font-size: 16px;
+    }
+    .hero_desc {
+        font-size: 12px;
+    }
+    .hero_visual {
+        min-height: 280px;
+        --hero-base-x: min(72vw, 440px);
+        --hero-base-y: min(56vw, 300px);
+    }
+}
+@media (max-width: 576px) {
+    section.hero {
+        padding: 50px 24px;
+    }
+    .hero_title {
+        font-size: 40px;
+    }
+    .hero_visual {
+        min-height: 220px;
+        --hero-base-x: min(84vw, 320px);
+        --hero-base-y: min(70vw, 240px);
+    }
+    .hero_bottle {
+        max-height: 300px;
+    }
+}
+/* featured */
+.featured {
+    margin-top: 80px;
+}
+.title_main {
+    text-align: center;
+    font-family: 'SVN-Gratelos';
+    font-size: 40px;
+    color: var(--brand-teal);
+    margin-bottom: 30px;
+}
+.featured_item h5 {
+    text-align: center;
+    font-family: 'Matahari-400';
+    font-size: 30px;
+    color: #F8F5E5;
+}
+.py-50 {
+    padding: 50px 0px;
+}
+.btn_top {
+    border: 1px solid #414042;
+    border-radius: 5px;
+    padding: 3px 11px;
+    font-size: 10px;
+    font-family: 'Matahari-400';
+    color: #414042;
+    display: inline-block;
+    background: white;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+.btn_top:hover {
+    background: #00AE9F;
+    color: white;
+}
+img {
+    max-width: 100%;
+}
+
+/* yummy */
+.yummy_item {
+    box-shadow: 2px 2px 6px #0000001f;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    overflow: hidden;
+}
+.yummy_item h5 {
+    font-family: 'Matahari-700';
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.yummy_item p {
+    font-family: 'Matahari-400';
+    font-size: 10px;
+    font-style: italic;
+}
+.yummy_item img {
+    width: 291px;
+    height: 291px;
+    position: relative;
+    bottom: -50px;
+    max-width: auto;
+    transition: all 0.5s ease;
+}
+.yummy_item:hover img {
+    bottom: 0px;
+}
+@media (max-width: 992px) {
+    .yummy_item {
+        margin-bottom: 16px;
+    }
+}
+/* crispy */
+.crispy_item {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.crispy_item img {
+    transition: all 0.5s ease;
+}
+.crispy_item:hover img {
+    transform: scale(1.15);
+}
+.sport_item {
+    background: linear-gradient(0deg, rgba(130, 34, 56, 1) 0%, rgba(190, 0, 77, 1) 100%);
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+.sport_item:hover {
+    transform: scale(0.94);
+}
+.group_arrow button {
+    background: white;
+    border: 1px solid #969696;
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+}
+.fresh_item {
+    background: #F5F5F7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.gap-10 {
+    gap: 10px;
+}
+.owl-stage {
+    display: flex;
+}
+.owl-nav {
+    display: none;
+}
