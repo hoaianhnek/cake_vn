@@ -163,6 +163,200 @@
     .bg-light {
         background: #D9D9D9;
     }
+    /* hero */
+    section.hero {
+        margin-top: 120px;
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+        background: url('{{ asset('images/products/nature-landscape-with-vegetation-flora.png') }}');
+        background-position: bottom left;
+        background-size: cover;
+    }
+    /* section.hero::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: url("{{ asset('images/home/bg.png') }}") center/cover no-repeat;
+        opacity: 0.45;
+        mix-blend-mode: screen;
+        pointer-events: none;
+    } */
+    section.hero .container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 48px;
+    }
+    .hero_content {
+        max-width: 420px;
+        color: #fff7eb;
+    }
+    .hero_title {
+        font-family: 'SVN-Gratelos';
+        font-size: 60px;
+        line-height: 0.95;
+        margin-bottom: 5px;
+        letter-spacing: 0.8px;
+    }
+    .hero_subtitle {
+        font-family: 'Matahari-400';
+        font-style: italic;
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .hero_desc {
+        font-family: 'Matahari-400';
+        font-size: 13px;
+        line-height: 1.7;
+        margin-bottom: 32px;
+        color: rgba(255, 255, 255, 0.85);
+    }
+    .hero_cta {
+        font-family: 'Matahari-400';
+        font-style: italic;
+        font-size: 12px;
+        color: #fff;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.06) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        padding: 9px 22px;
+        backdrop-filter: blur(6px);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hero_cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(255, 255, 255, 0.18);
+    }
+    .hero_visual {
+        flex: 1;
+        position: relative;
+        min-height: 360px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        perspective: 1200px;
+    }
+    .hero_bottle {
+        max-height: 430px;
+        width: auto;
+        position: relative;
+        z-index: 2;
+        transform-origin: center center;
+        transform: rotate(0deg);
+        transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+        filter: drop-shadow(0 42px 40px rgba(153, 79, 0, 0.35));
+    }
+    .hero_decor {
+        position: absolute;
+        max-width: none;
+        z-index: 1;
+        pointer-events: none;
+        transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+        transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.6s ease;
+        will-change: transform;
+    }
+    .hero_decor--1 {
+        width: 110px;
+        top: 5%;
+        right: 25%;
+    }
+    .hero_decor--2 {
+        width: 80px;
+        top: 22%;
+        left: 38%;
+    }
+    .hero_decor--3 {
+        width: 60px;
+        top: 20%;
+        left: 35%;
+    }
+    .hero_decor--4 {
+        width: 50px;
+        top: 60%;
+        left: 15%;
+    }
+    .hero_decor--5 {
+        width: 110px;
+        top: 70%;
+        left: 32%;
+    }
+    .hero_decor--6 {
+        width: 65px;
+        top: 65%;
+        right: 40%;
+        z-index: 10;
+    }
+    .hero_visual:hover .hero_bottle {
+        transform: rotate(-30deg);
+    }
+    .hero_visual:hover .hero_decor--1 {
+        transform: translate3d(80px, -80px, 0) rotate(-45deg);
+    }
+    .hero_visual:hover .hero_decor--2 {
+        transform: translate3d(-95px, 20px, 0) rotate(-20deg);
+    }
+    .hero_visual:hover .hero_decor--3 {
+        transform: translate3d(-100px, -75px, 0) rotate(30deg);
+    }
+    .hero_visual:hover .hero_decor--4 {
+        transform: translate3d(-50px, -50px, 0) rotate(-45deg);
+    }
+    .hero_visual:hover .hero_decor--5 {
+        transform: translate3d(-50px, 40px, 0) rotate(-70deg);
+    }
+    .hero_visual:hover .hero_decor--6 {
+        transform: translate3d(100px, 50px, 0) rotate(70deg);
+    }
+    @media (max-width: 992px) {
+        section.hero {
+            padding: 60px 30px;
+            margin-top: 60px;
+        }
+        section.hero .container {
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero_content {
+            max-width: 100%;
+        }
+        .hero_title {
+            font-size: 52px;
+        }
+        .hero_subtitle {
+            font-size: 16px;
+        }
+        .hero_desc {
+            font-size: 12px;
+        }
+        /* .hero_visual {
+            min-height: 280px;
+        } */
+        /* .hero_decor--1,
+        .hero_decor--2,
+        .hero_decor--3,
+        .hero_decor--4 {
+            width: 56px;
+        } */
+    }
+    @media (max-width: 576px) {
+        section.hero {
+            padding: 50px 24px;
+            border-radius: 24px;
+        }
+        .hero_title {
+            font-size: 40px;
+        }
+        /* .hero_visual {
+            min-height: 220px;
+        } */
+        .hero_bottle {
+            max-height: 300px;
+        }
+    }
     /* featured */
     .featured {
         margin-top: 80px;
@@ -319,7 +513,7 @@
         </li>
     </ul>
 </section>
-<section class="slides">
+<!-- <section class="slides">
     <div class="slide_item">
         <div class="bg_slide"></div>
         <div class="container">
@@ -344,8 +538,29 @@
             </div>
         </div>
     </div>
+</section> -->
+
+<section class="hero">
+    <div class="container">
+        <div class="hero_content">
+            <h2 class="hero_title">Sâm Bản Việt</h2>
+            <p class="hero_subtitle">Nguồn năng lượng từ thiên nhiên</p>
+            <p class="hero_desc">Mỗi củ sâm dây tươi Ngọc Linh quý hiếm kết hợp cùng các vị thảo mộc trong y học cổ truyền táo đỏ, kỳ tử, cam thảo và long nhãn thượng hạng được bổ sung trong mỗi chai.</p>
+            <button type="button" class="hero_cta">Mua ngay</button>
+        </div>
+        <div class="hero_visual">
+            <img class="hero_bottle" src="{{ asset('images/products/item_bottle.png') }}" alt="BV Fresh - Sâm Bản Việt" />
+            <img class="hero_decor hero_decor--1" src="{{ asset('images/products/item_1.png') }}" alt="" aria-hidden="true" />
+            <img class="hero_decor hero_decor--2" src="{{ asset('images/products/item_2.png') }}" alt="" aria-hidden="true" />
+            <img class="hero_decor hero_decor--3" src="{{ asset('images/products/item_3.png') }}" alt="" aria-hidden="true" />
+            <img class="hero_decor hero_decor--4" src="{{ asset('images/products/item_4.png') }}" alt="" aria-hidden="true" />
+            <img class="hero_decor hero_decor--5" src="{{ asset('images/products/item_5.png') }}" alt="" aria-hidden="true" />
+            <img class="hero_decor hero_decor--6" src="{{ asset('images/products/item_6.png') }}" alt="" aria-hidden="true" />
+        </div>
+    </div>
 </section>
-<section class="featured bg-light py-50">
+
+<!-- <section class="featured bg-light py-50">
     <h2 class="title_main">Sản phẩm nổi bật</h2>
     <div class="container">
         <div class="featured_list">
@@ -365,7 +580,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <section class="fresh py-50 overflow-hidden">
     <h5 class="title_main">BV Fresh</h5>
     <div class="container">
