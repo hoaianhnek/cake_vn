@@ -123,6 +123,12 @@ body {
     height: 20px;
 }
 
+.header-fixed {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
 .header-nav-link {
     font-family: 'Matahari-400';
     letter-spacing: 0.08em;
