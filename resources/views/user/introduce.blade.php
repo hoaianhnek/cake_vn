@@ -170,4 +170,7 @@
         </div>
     </section>
 </main>
+<div class="text-center mb-5">
+    <button type="button" class="btn-custom js-scroll-top" onclick="scrollToTop()">Lên trang đầu</button>
+</div>
 @endsection

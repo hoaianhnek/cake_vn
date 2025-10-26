@@ -24,9 +24,6 @@
 
     @yield('content')
 
-    <div class="text-center mb-5">
-        <button type="button" class="btn-custom js-scroll-top" onclick="scrollToTop()">Lên trang đầu</button>
-    </div>
     @include('user.layouts.footer')
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
