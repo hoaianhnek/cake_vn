@@ -32,7 +32,7 @@
             <div class="content">
                 <h2 class="title">Nuôi dưỡng điều lành</h2>
                 <p class="desc">Trở thành công ty hàng đầu chuyên nghiên cứu, sản xuất và cung cấp cho thị trường trong nước dòng nước giải khát chăm sóc sức khỏe thiên nhiên thuần Việt.</p>
-                <button class="btn-custom">Đọc thêm</button>
+                <a class="btn-custom" href="{{ route('introduce') }}">Đọc thêm</a>
             </div>
 
             <!-- Image -->
@@ -105,10 +105,6 @@
                         <path d="M2 2.25L19.5 18.75L2 35.25" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
-            </div>
-
-            <div class="text-center mt-4 pt-lg-2">
-                <button type="button" class="btn-custom js-scroll-top">Lên trang đầu</button>
             </div>
         </div>
 

@@ -214,12 +214,7 @@
 
 @section('js-script')
 <script>
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
+    
 
     $(document).ready(function(){
         var owl = $('.fresh_list').owlCarousel({

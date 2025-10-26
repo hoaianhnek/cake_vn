@@ -8,7 +8,7 @@ use App\Http\Controllers\User\{
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/product', [HomeController::class, 'product']);
-Route::get('/introduce', [HomeController::class, 'introduce']);
+Route::get('/introduce', [HomeController::class, 'introduce'])->name('introduce');
 Route::get('/product-detail', [HomeController::class, 'productDetail']);
 
 Route::get('/lang/{locale}', function ($locale) {

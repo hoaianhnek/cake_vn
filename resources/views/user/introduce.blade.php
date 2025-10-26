@@ -83,7 +83,7 @@
             </figure>
             <div class="introduce-feature__content">
                 <h2 class="introduce-feature__title">Nuôi dưỡng điều lành</h2>
-                <div class="introduce-feature__desc">
+                <div class="introduce-feature__desc" style="max-width: 490px">
                     <p>Trở thành công ty hàng đầu chuyên nghiên cứu, sản xuất và cung cấp cho thị trường trong nước dòng nước giải khát chăm sóc sức khỏe thiên nhiên thuần Việt.</p>
                     <p>Công ty được khởi dựng từ một mong muốn giản dị: đem lại sức khỏe dài hạn cho người Việt bằng chính dược liệu Việt — táo tàu, nha đam, bí đao, táo đỏ, sâm.</p>
                     <p>Người sáng lập từng nhớ mùi nước mát trong bếp nhà, từng uống chén trà táo đỏ của bà, và tin rằng những ký ức ấy xứng đáng được tái sinh theo phong cách hiện đại.</p>
@@ -94,9 +94,9 @@
 
     <section class="introduce-feature introduce-feature--reverse">
         <div class="introduce-feature__card introduce-feature__card--reverse">
-            <div class="introduce-feature__content">
+            <div class="introduce-feature__content d-flex align-items-end">
                 <h2 class="introduce-feature__title">Lưu giữ hồn Việt</h2>
-                <div class="introduce-feature__desc">
+                <div class="introduce-feature__desc text-end" style="max-width: 490px">
                     <p>Trong ký ức tuổi thơ, căn bếp nhỏ của bà luôn thoảng mùi sâm bí đao, táo tàu, táo đỏ. Những trưa hè êm ái, chị em chúng tôi được bà sẵn tay rót nước mát, bao trùm một cảm giác dịu êm, hạnh phúc đến tận sâu tim.</p>
                     <p>Ký ức ấy theo chúng tôi lớn lên, để rồi trở thành khởi nguồn cho hành trình “hồn nay”. Từ táo đỏ, nha đam, sâm… những nguyên liệu thuần khiết được lựa chọn kỹ, giữ trọn dưỡng chất, không hương liệu, không màu nhân tạo.</p>
                     <p>Giữa nhịp sống hiện đại, Bánh Việt tin rằng đôi bàn tay tận tâm và công nghệ chuẩn hoá có thể biến những giá trị đời thường thành thức uống tốt lành mỗi ngày.</p>
@@ -114,33 +114,47 @@
                 <div class="introduce-values__content">
                     <h2 class="introduce-values__title">Đồng hành cùng bạn</h2>
                     <ul class="introduce-values__list">
-                        <li>Vì sức khỏe người Việt, luôn hướng đến sự an toàn và hài hòa tự nhiên.</li>
-                        <li>Sống và làm việc trung thực, đề cao đạo đức trong mọi quyết định.</li>
-                        <li>Luôn đổi mới để nâng tầm trải nghiệm cho khách hàng và đối tác.</li>
-                        <li>Chia sẻ trách nhiệm với cộng đồng, tích cực tham gia hoạt động xã hội.</li>
-                        <li>Hội tụ nhiệt huyết và khát vọng vươn xa cùng đất nước.</li>
+                        <li>
+                            <span class="num">1</span>Vì sức khỏe người Việt, luôn hướng đến sự an toàn và hài hòa tự nhiên.</li>
+                        <li>
+                            <span class="num">2</span>Sống và làm việc trung thực, đề cao đạo đức trong mọi quyết định.</li>
+                        <li>
+                            <span class="num">3</span>Luôn đổi mới để nâng tầm trải nghiệm cho khách hàng và đối tác.</li>
+                        <li>
+                            <span class="num">4</span>Chia sẻ trách nhiệm với cộng đồng, tích cực tham gia hoạt động xã hội.</li>
+                        <li>
+                            <span class="num">5</span>Hội tụ nhiệt huyết và khát vọng vươn xa cùng đất nước.</li>
                     </ul>
                 </div>
                 <figure class="introduce-values__media">
-                    <img src="{{ asset('images/home/bottle-hand.png') }}" alt="Sản phẩm Bánh Việt đồng hành cùng bạn" loading="lazy">
+                    <div class="introduce-values__media-card">
+                        <div class="introduce-values__media-img">
+                            <img src="{{ asset('images/home/bottle-hand.png') }}" alt="Sản phẩm Bánh Việt đồng hành cùng bạn" loading="lazy">
+                        </div>
+                    </div>
                 </figure>
             </div>
         </div>
     </section>
 
     <section class="introduce-founder">
-        <div class="container">
-            <div class="introduce-founder__grid">
-                <div class="introduce-founder__content">
-                    <h2 class="introduce-founder__title">Thông điệp nhà sáng lập</h2>
-                    <p>“Bánh Việt ra đời từ khát vọng mang những điều thuần khiết nhất của đất Việt đến với mọi gia đình. Chúng tôi tin rằng sức khỏe bền vững bắt đầu từ sự cân bằng giữa thiên nhiên và con người.”</p>
-                    <p>“Mỗi thành viên trong đại gia đình Bánh Việt đều là sứ giả lan tỏa yêu thương, giữ trọn niềm tự hào dân tộc trong từng sản phẩm.”</p>
-                    <span class="introduce-founder__name">Bà Lê Thị Vân Thanh – CEO</span>
-                </div>
-                <figure class="introduce-founder__media">
-                    <img src="{{ asset('images/home/ceo.png') }}" alt="Bà Lê Thị Vân Thanh - CEO Bánh Việt" loading="lazy">
-                </figure>
+        <div class="container position-relative">
+            <h2 class="introduce-founder__title">Thông điệp nhà sáng lập</h2>
+            <div class="introduce-founder__content">
+                <p>
+                    Bà Vân Thanh được biết đến là người năng lực và kiên định, đã xây dựng thương hiệu BV Fresh với phương châm duy nhất “Thức uống mát lành, phù hợp cho mọi gia đình Việt”. 
+                    
+                    Sau sản phẩm Quẩy giòn BV Yummy, dưới tư duy kiến tạo và định hướng thị trường của bà, các sản phẩm nước uống giải khát, sử dụng nguyên liệu truyền thống như sâm tươi, tía tô, bí đao, trái tắc… kết hợp với công thức đông y độc đáo lần lượt được cho ra đời và ghi dấu ấn với các đối tác trong nước. 
+                    
+                    Tôi tốt nghiệp chuyên ngành du lịch. Trong những năm tháng làm nghề, tôi đã đi qua hơn 40 tỉnh thành Việt Nam. Tôi được tìm hiểu, nghiên cứu và thưởng thức nhiều món ăn vùng miền, từ đó mê đắm văn hoá ẩm thực nước nhà. Với tôi, ẩm thực luôn mang trong mình nội hàm văn hóa, khi gọi tên món ăn hoặc thức uống người ta có thể nhận ra đó là đất nước nào. 
+                    
+                    Nhờ đam mê đó mà tôi bén duyên với ngành sản xuất bánh ngọt và đồ uống. Bánh Việt đã, đang và sẽ luôn mang đến những sản phẩm truyền thống, sử dụng các nguyên liệu an toàn, lành tính, đặc biệt tốt cho sức khoẻ và phù hợp với khẩu vị của người Việt Nam.
+                </p>
+                <span class="introduce-founder__name">Bà LÊ THỊ VÂN THANH – CEO</span>
             </div>
+            <figure class="introduce-founder__media">
+                <img src="{{ asset('images/home/ceo.png') }}" alt="Bà Lê Thị Vân Thanh - CEO Bánh Việt" loading="lazy">
+            </figure>
         </div>
     </section>
 
@@ -153,7 +167,6 @@
                 <img src="{{ asset('images/home/brand-3.png') }}" alt="BV Yummy">
                 <img src="{{ asset('images/home/brand-4.png') }}" alt="BV Yummy Kids">
             </div>
-            <button type="button" class="introduce-brands__cta">Xem sản phẩm</button>
         </div>
     </section>
 </main>
