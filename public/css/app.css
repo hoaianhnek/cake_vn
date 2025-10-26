@@ -449,8 +449,8 @@ body.mobile-menu-open {
 }
 
 .social-icon {
-    width: auto;
-    height: 50px;
+    /* width: auto;
+    height: 50px; */
 }
 
 .footer-divider {
