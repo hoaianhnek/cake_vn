@@ -267,9 +267,18 @@
     .fresh_item {
         background: #F5F5F7;
         border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        height: 100%;
     }
     .gap-10 {
         gap: 10px;
+    }
+    .owl-stage {
+        display: flex;
+    }
+    .owl-nav {
+        display: none;
     }
 </style>
 @endsection
@@ -339,12 +348,12 @@
 <section class="featured bg-light py-50">
     <h2 class="title_main">Sản phẩm nổi bật</h2>
     <div class="container">
-        <div class="d-flex">
+        <div class="featured_list">
             <div class="featured_item">
                 <h5>Bí Đao Collgen</h5>
                 <img src="{{ asset('images/products/featured1.png') }}" />
             </div>
-            {{-- <div class="slide_item">
+            <div class="slide_item">
                 <img src="{{ asset('images/products/featured2.png') }}" />
             </div>
             <div class="slide_item">
@@ -353,26 +362,26 @@
             </div>
             <div class="slide_item">
                 <img src="{{ asset('images/products/featured2.png') }}" />
-            </div> --}}
+            </div>
         </div>
     </div>
 </section>
-<section class="fresh py-50">
+<section class="fresh py-50 overflow-hidden">
     <h5 class="title_main">BV Fresh</h5>
     <div class="container">
-        <div class="group_arrow text-end">
-            <button class="me-1">
+        <div class="group_arrow text-end mb-3">
+            <button class="me-1 btn-prev">
                 <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.0168 16.6887L1.11679 8.62718L10.0168 0.555557" stroke="#969696" stroke-width="1.5" stroke-miterlimit="10"/>
                 </svg>
             </button>
-            <button>
+            <button class="btn-next">
                 <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.503845 0.555908L9.40381 8.61745L0.503845 16.6891" stroke="#221F20" stroke-width="1.5" stroke-miterlimit="10"/>
                 </svg>
             </button>
         </div>
-        <div class="d-flex gap-10 fresh_list">
+        <div class="gap-10 fresh_list">
             <div class="fresh_item">
                 <img src="{{ asset('images/products/fresh1.png') }}" />
             </div>
@@ -383,7 +392,13 @@
                 <img src="{{ asset('images/products/fresh3.png') }}" />
             </div>
             <div class="fresh_item">
-                <img src="{{ asset('images/products/fresh3.png') }}" />
+                <img src="{{ asset('images/products/fresh4.png') }}" />
+            </div>
+            <div class="fresh_item">
+                <img src="{{ asset('images/products/fresh1.png') }}" />
+            </div>
+            <div class="fresh_item">
+                <img src="{{ asset('images/products/fresh2.png') }}" />
             </div>
         </div>
     </div>
@@ -468,16 +483,42 @@
     }
 
     $(document).ready(function(){
-        $('.fresh_list').owlCarousel({
-            center: true,
-            items: 2,
+        var owl = $('.fresh_list').owlCarousel({
+            items: 3,
             loop: false,
             margin: 10,
+            dots: false,  
+            nav: false,
             responsive: {
-                600: {
-                    items: 2
+                0: {          
+                    items: 1
+                },
+                768: {       
+                    items: 3
                 }
             }
+        });
+        var owl = $('.featured_list').owlCarousel({
+            items: 1,
+            loop: false,
+            margin: 10,
+            dots: true,  
+            nav: false,
+            responsive: {
+                0: {          
+                    items: 1
+                },
+                768: {       
+                    items: 1
+                }
+            }
+        });
+
+        $('.group_arrow .btn-next').click(function() {
+            owl.trigger('next.owl.carousel');
+        });
+        $('.group_arrow .btn-prev').click(function() {
+            owl.trigger('prev.owl.carousel');
         });
     });
 </script>
