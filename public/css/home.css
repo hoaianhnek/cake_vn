@@ -6,14 +6,12 @@
     background-color: white;
 }
 
-.home .container-custom {
-    padding: auto 50px;
+.home .text-gray {
+    color: var(--brand-gray);
 }
 
-.home .first-section {
-    background-image: url('../images/home/bg.png');
-    width: 100%;
-    height: 511px;
+.home .container-custom {
+    margin: auto 100px;
 }
 
 .home .content {
@@ -61,11 +59,16 @@
     border-color: var(--brand-teal);
 }
 
+.home .img-card {
+    text-align: center;
+}
+
 .home .image {
     width: 100%;
     height: auto;
     object-fit: cover;
     margin-bottom: 50px;
+    max-width: 1450px;
 }
 
 .choice-section {
@@ -76,10 +79,14 @@
 }
 
 .choice-section .line {
-    width: 100%;
-    border-top: 3px solid var(--brand-teal);
     position: absolute;
-    bottom: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    border-top: 3px solid var(--brand-teal);
+    top: var(--choice-line-top, calc(100% - 30px));
+    pointer-events: none;
+    z-index: 0;
 }
 
 .choice-header {
@@ -102,6 +109,10 @@
 .choice-carousel {
     margin-top: 2.5rem;
     padding: 0 3rem;
+    position: relative;
+    z-index: 1;
+    max-width: 1450px;
+    margin: 0 auto;
 }
 
 .choice-carousel-viewport {
@@ -118,6 +129,7 @@
     display: flex;
     gap: clamp(1.5rem, 3vw, 2.5rem);
     padding: 0.5rem 0;
+    align-items: flex-end;
 }
 
 .choice-card {
@@ -129,7 +141,9 @@
     gap: 1rem;
     padding: 1.5rem 1rem;
     transition: transform 0.3s ease;
-    transform-origin: bottom center; 
+    transform-origin: bottom center;
+    position: relative;
+    z-index: 1;
 }
 
 .choice-card:hover {
@@ -141,7 +155,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    min-height: 250px;
+    min-height: clamp(11.25rem, 28vw, 15.625rem);
 }
 
 .choice-card-image img {
@@ -225,19 +239,15 @@
     .choice-card {
         flex: 0 0 30%;
     }
-
-    .choice-section .line {
-        bottom: 156px;
-    }
 }
 
 @media (max-width: 767.98px) {
-    .choice-section {
-        padding: 3rem 0;
+    .home .container-custom {
+        margin: 0;
     }
 
-    .choice-section .line {
-        bottom: 153px;
+    .choice-section {
+        padding: 3rem 0;
     }
 
     .choice-carousel {
@@ -248,27 +258,15 @@
         flex: 0 0 46%;
         padding: 1.25rem 0.75rem;
     }
-
-    .choice-card-image {
-        min-height: 180px;
-    }
 }
 
 @media (max-width: 575.98px) {
-    .home .container-custom {
-        padding: 0;
-    }
-
     .choice-carousel {
         padding: 0 1rem 4.5rem;
     }
 
     .choice-card {
         flex: 0 0 100%;
-    }
-
-    .choice-section .line {
-        bottom: 225px;
     }
 
     .choice-nav {
