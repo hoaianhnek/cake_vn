@@ -11,6 +11,7 @@ Route::get('/product', [HomeController::class, 'product']);
 Route::get('/introduce', [HomeController::class, 'introduce'])->name('introduce');
 Route::get('/product-detail', [HomeController::class, 'productDetail']);
 Route::get('/blog', [HomeController::class, 'blog']);
+Route::get('/blog/{id}', [HomeController::class, 'blogDetail']);
 
 Route::get('/lang/{locale}', function ($locale) {
     if (!in_array($locale, ['en', 'vi'])) {

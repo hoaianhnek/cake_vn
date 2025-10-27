@@ -25,4 +25,8 @@ class HomeController extends Controller
     public function blog() {
         return view('user.blog');
     }
+
+    public function blogDetail($id) {
+        return view('user.blog-detail', ['id' => $id]);
+    }
 }
