@@ -21,4 +21,8 @@ class HomeController extends Controller
     public function introduce() {
         return view('user.introduce');
     }
+
+    public function blog() {
+        return view('user.blog');
+    }
 }

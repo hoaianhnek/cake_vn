@@ -12,7 +12,7 @@
             <nav id="header-nav" class="d-none d-lg-flex align-items-center gap-3 gap-lg-4 {{ request()->is('/') ? 'is-home' : '' }}">
                 <a href="{{ url('/') }}" class="header-nav-link {{ request()->is('/') ? 'header-nav-link-active' : '' }}">Giới Thiệu</a>
                 <a href="{{ url('/product') }}" class="header-nav-link {{ request()->is('product') ? 'header-nav-link-active' : '' }}" class="header-nav-link">Sản Phẩm</a>
-                <a href="#" class="header-nav-link">Dinh Dưỡng</a>
+                <a href="{{ url('/blog') }}" class="header-nav-link {{ request()->is('blog') ? 'header-nav-link-active' : '' }}" class="header-nav-link">Dinh Dưỡng</a>
                 <a href="#" class="header-nav-link">Đặt Hàng</a>
             </nav>
 
